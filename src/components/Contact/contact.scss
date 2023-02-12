@@ -1,6 +1,5 @@
 .contact {
     .introduction {
-        // background-color: plum;
         width: 75%;
         display: flex;
         justify-content: center;
@@ -10,23 +9,19 @@
             position: absolute;
             bottom: 0;
             left: -3rem;
-            // background-color: yellow;
             display: flex;
             height: 100%;
 
 
             img {
-                // border: blue solid 1px;
                 align-self: flex-end;
                 height: 90%;
             }
         }
 
         .text {
-            // border: green dashed 1px;
-
             a {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 transition: ease-in-out font-size 2s, color 2s;
 
                 &:hover {
@@ -42,19 +37,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // border: red dashed 1px;
 
         form {
             display: flex;
             flex-direction: column;
             gap: 1rem;
             width: 50%;
-            // border: blue solid 1px;
 
             label {
                 display: flex;
                 flex-direction: column;
-                font-size: 1.5rem;
             }
 
             input,
@@ -90,7 +82,6 @@
             margin-bottom: 2rem;
 
             form {
-                // border: yellow dashed 2px;
                 width: 100%;
                 padding: 2rem;
                 text-align: center;

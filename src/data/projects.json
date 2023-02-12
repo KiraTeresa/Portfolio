@@ -3,7 +3,7 @@
     "no": 4,
     "name": "Portfolio",
     "deployment": "https://kirateresa.netlify.app/",
-    "introduction": "An introduction of myself. See my latest projects and get in touch.",
+    "introduction": "An introduction of myself and my latest projects.",
     "description": [
         {
             "feature": "Home page",
