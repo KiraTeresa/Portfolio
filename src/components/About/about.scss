@@ -1,20 +1,6 @@
 .container {
     &.about {
         justify-content: space-between;
-        // background-color: yellow;
-        align-items: unset;
-        // padding: 5vh 1rem;
-
-        section {
-            height: unset;
-            // background-color: green;
-        }
-
-        /* 
-        ---------------------------------------------
-        Introduction
-        --------------------------------------------- 
-        */
 
         .introduction {
             display: flex;
@@ -24,7 +10,6 @@
         }
 
         .me {
-            display: flex;
             flex-direction: column;
             justify-content: center;
             width: 50%;
@@ -38,7 +23,6 @@
 
         .stack-wrapper {
             width: 35%;
-            display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 3rem;
