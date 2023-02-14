@@ -6,7 +6,7 @@
     "introduction": "An introduction of myself and my latest projects.",
     "description": [
         {
-            "feature": "Home page",
+            "feature": "Homepage",
             "descr": "The homepage automatically slides through the main info, including my latest project."
         },
         {
