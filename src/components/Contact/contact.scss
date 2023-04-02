@@ -1,6 +1,4 @@
 .contact {
-
-    // style for placeholder component...
     .connect {
         justify-content: space-between;
         align-items: center;
@@ -14,7 +12,7 @@
 
             a {
                 font-size: 1.5rem;
-                transition: ease-in-out font-size 2s, color 2s;
+                transition: ease-in-out font-size .8s, color 2s;
 
                 &:hover {
                     font-size: 3rem;
@@ -22,106 +20,33 @@
                 }
             }
         }
+
+        @media (max-width: 768px) {
+            div {
+                a {
+                    &:hover {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+
+            h2 {
+                text-align: center;
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
-    // ...end
-
-    // .introduction {
-    //     width: 75%;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     .img-wrapper {
-    //         position: absolute;
-    //         bottom: 0;
-    //         left: -3rem;
-    //         display: flex;
-    //         height: 100%;
-
-
-    //         img {
-    //             align-self: flex-end;
-    //             height: 90%;
-    //         }
-    //     }
-
-    //     .text {
-    //         a {
-    //             font-size: 1.5rem;
-    //             transition: ease-in-out font-size 2s, color 2s;
-
-    //             &:hover {
-    //                 font-size: 3rem;
-    //                 color: rgb(92, 111, 108);
-    //             }
-    //         }
-    //     }
-    // }
-
-    // .form {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     form {
-    //         display: flex;
-    //         flex-direction: column;
-    //         gap: 1rem;
-    //         width: 70%;
-
-    //         label {
-    //             display: flex;
-    //             flex-direction: column;
-    //         }
-
-    //         input,
-    //         textarea {
-    //             margin-top: 5px;
-    //             padding: 10px;
-    //             background-color: #D9D9D9;
-    //             border: none;
-    //             font-size: 1.2rem;
-    //             color: #051a16;
-    //         }
-
-    //         textarea {
-    //             height: 100px;
-    //         }
-    //     }
-    // }
-
-    // @media (max-width: 1024px) {
-    //     flex-direction: column;
-    //     gap: 2rem;
-
-    //     .introduction {
-    //         width: 100%;
-
-    //         .text {
-    //             a {
-    //                 font-size: 2rem;
-    //             }
-    //         }
-    //     }
-
-    //     .form {
-    //         margin-bottom: 2rem;
-
-    //         form {
-    //             width: 100%;
-    //             padding: 2rem;
-    //             text-align: center;
-    //         }
-    //     }
-    // }
-
-    // @media (max-width: 480px) {
-    //     .form {
-    //         form {
-    //             padding: 0;
-    //         }
-    //     }
-    // }
 }
