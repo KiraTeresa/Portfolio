@@ -31,17 +31,19 @@ function Navbar() {
       </Link>
 
       <div className="burger-menu" onClick={triggerNav}>&#9776;</div>
+
       <div className={`navigation ${showNav ? 'show-nav' : ''} ${hideNav ? 'hide-nav' : ''}`}>
+
         <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={hide}>
-          About
+          <span>About</span>
         </NavLink>
 
         <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''} onClick={hide}>
-          Projects
+          <span>Projects</span>
         </NavLink>
 
         <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={hide}>
-          Contact
+          <span>Contact</span>
         </NavLink>
       </div>
     </nav>
