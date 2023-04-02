@@ -5,7 +5,6 @@ function ContactConnect() {
       <div>
         <a href="https://www.linkedin.com/in/kira-teresa-soba/">➽ Linkedin</a>
         <a href="https://github.com/KiraTeresa">➽ GitHub</a>
-        <a href="mailto:kira.soba@gmx.de">➽ Email</a>
       </div>
     </section>
   )

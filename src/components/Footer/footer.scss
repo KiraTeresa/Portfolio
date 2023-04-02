@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    align-items: center;
     padding: 20px 100px;
     width: 100%;
     height: 70px;
@@ -13,6 +12,7 @@ footer {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        // border: red dashed 2px;
 
         div {
             display: flex;
@@ -21,11 +21,22 @@ footer {
             p {
                 margin: 0;
                 font-size: .8rem;
+                align-self: center;
             }
-        }
 
-        img {
-            display: none
+            &.social-media {
+                // background-color: pink;
+
+                a {
+                    display: flex;
+
+                    img {
+                        // border: blue solid 3px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
         }
     }
 
