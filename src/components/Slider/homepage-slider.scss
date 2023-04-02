@@ -1,0 +1,143 @@
+.slider {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+
+    .slider-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .active-slide-element {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            section {
+                display: none;
+                max-width: unset;
+
+                &.visible {
+                    display: flex;
+                    justify-content: center;
+                    opacity: 0;
+                    animation-name: fade;
+                    animation-duration: 8000ms;
+                    animation-fill-mode: forwards;
+                    opacity: 1;
+                }
+
+                @keyframes fade {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    80% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+                &.introduction {
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .quote {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-style: italic;
+                }
+
+                &.project-card {
+                    .project-text {
+                        display: flex;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    &.project-card {
+                        gap: 2rem;
+
+                        .project-text {
+                            flex-direction: column-reverse;
+
+                            .info {
+                                width: 100%;
+                            }
+
+                            .screenshot-wrapper {
+                                max-width: 60%;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    &.project-card {
+                        .project-text {
+                            width: 80%;
+                            align-self: center;
+                        }
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    &.project-card {
+                        .project-text {
+                            .collab {
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: .4rem;
+                            }
+
+                            .screenshot-wrapper {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    &.quote {
+                        div {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slideNav-wrapper {
+            width: 100%;
+            height: fit-content;
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            z-index: 4;
+
+            .slideNav {
+                height: .8rem;
+                width: .8rem;
+                border: #F6F9F8 solid 1px;
+                border-top-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                transition: background-color ease-in-out 1500ms;
+
+                &.active {
+                    background-color: #F6F9F8;
+                }
+            }
+
+        }
+    }
+}

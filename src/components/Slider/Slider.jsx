@@ -1,7 +1,7 @@
 import Introduction from '../About/Introduction';
 import Quotation from '../About/Quotation';
 import ProjectCard from '../Projects/ProjectCard';
-import './slider.scss';
+import './homepage-slider.scss';
 import { useEffect, useState } from 'react';
 
 function Slider({ latestProject }) {

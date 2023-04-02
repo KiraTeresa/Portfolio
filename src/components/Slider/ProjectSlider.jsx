@@ -1,11 +1,11 @@
-import './slider.scss'
+import './project-slider.scss'
 import { useState } from 'react'
 import ProjectCard from "../../components/Projects/ProjectCard";
 import projects from "../../data/projects.json"
 
 function ProjectSlider() {
     const [slides, setSlides] = useState({
-        prev: projects.length-1,
+        prev: projects.length - 1,
         currentBack: 0,
         next: 1
     })
