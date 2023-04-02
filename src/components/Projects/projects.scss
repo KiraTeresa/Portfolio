@@ -4,7 +4,7 @@
     justify-content: center;
     // background-color: aqua;
 
-    .latesProj{
+    .latestProj {
         font-size: 1.2rem;
         padding-left: 1rem;
     }
@@ -14,8 +14,6 @@
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
-        height: 50%;
-        // border: red dotted 1px;
 
         &>div {
             &.info {
@@ -34,7 +32,7 @@
                 }
 
                 h2 {
-                    margin-bottom: 1rem; 
+                    margin-bottom: 1rem;
                     border-bottom: #F6F9F8 solid 2px;
                 }
             }
@@ -44,7 +42,7 @@
             // background-color: bisque;
             display: flex;
             justify-content: center;
-            width: 45%;
+            width: 10rem;
 
             img {
                 max-width: 90%;
@@ -66,21 +64,21 @@
         }
     }
 
-    @media (max-width: 1024px) {
-        .project-wrapper {
-            flex-direction: column-reverse;
-            align-items: center;
+    // @media (max-width: 1024px) {
+    //     .project-wrapper {
+    //         flex-direction: column-reverse;
+    //         align-items: center;
 
-            &>div {
-                align-items: center;
+    //         &>div {
+    //             align-items: center;
 
-                &.info {
-                    text-align: justify;
-                    width: 100%;
-                }
-            }
-        }
-    }
+    //             &.info {
+    //                 text-align: justify;
+    //                 width: 100%;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 .project-page {
@@ -141,7 +139,7 @@
                 font-size: 1.5rem;
                 padding-bottom: .5rem;
 
-                &:not(:last-child):after{
+                &:not(:last-child):after {
                     content: "|";
                     padding: 0 .5rem;
                 }
@@ -182,7 +180,7 @@
                 .info {
                     width: 100%;
                 }
-            
+
                 .screenshot-wrapper {
                     justify-content: center;
                 }
@@ -235,12 +233,14 @@
                     }
                 }
             }
+
             &.stack-wrapper {
-                ul{
+                ul {
                     justify-content: center;
                 }
-           }
+            }
         }
+
         .project-card {
             .project-text {
                 .screenshot-wrapper {
@@ -248,6 +248,6 @@
                 }
             }
         }
-        
+
     }
 }

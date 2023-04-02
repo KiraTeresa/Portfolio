@@ -43,7 +43,7 @@ function Navbar() {
         </NavLink>
 
         <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={hide}>
-          <span>Contact</span>
+          <span>Connect</span>
         </NavLink>
       </div>
     </nav>

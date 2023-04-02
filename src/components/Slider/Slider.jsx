@@ -25,9 +25,11 @@ function Slider({ latestProject }) {
     return (
         <section className='slider'>
             <div className='slider-wrapper'>
-                <Introduction isVisible={element === ''} />
-                <Quotation isVisible={element === 'quote'} />
-                <ProjectCard props={{ proj: latestProject, isVisible: element === 'project' }} />
+                <div className='active-slide-element'>
+                    <Introduction isVisible={element === ''} />
+                    <Quotation isVisible={element === 'quote'} />
+                    <ProjectCard props={{ proj: latestProject, isVisible: element === 'project' }} />
+                </div>
                 <div className='slideNav-wrapper'>
                     {elements.map((el) => {
                         return <div key={el} className={`slideNav ${element === el ? 'active' : ''}`} onClick={() => setElement(el)}></div>

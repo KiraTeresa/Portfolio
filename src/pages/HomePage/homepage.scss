@@ -1,8 +1,9 @@
 .homepage {
-    &.container{
+    &.container {
         padding-bottom: 0;
+        // height: 85vh;
     }
-    
+
     section {
         max-width: 50%;
 
@@ -20,9 +21,9 @@
         }
 
         @media (max-width: 768px) {
-        max-width: 100%;
+            max-width: 100%;
 
-            &.me-image{
+            &.me-image {
                 display: none;
             }
         }

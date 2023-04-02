@@ -13,7 +13,7 @@ function ProjectCard({ props }) {
         <section className={`project-card ${isVisible ? 'visible' : ''} ${position ? position : ''} ${btnClicked ? btnClicked : ''}
          `}>
             {onHomepage ?
-                <p className='latesProj'>{"My latest project"}</p>
+                <p className='latestProj'>{"My latest project"}</p>
                 : ""}
             <div className='project-text'>
                 <div className='info'>
